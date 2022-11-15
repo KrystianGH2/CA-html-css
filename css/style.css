@@ -1,5 +1,8 @@
 @import "https://unpkg.com/open-props";
-
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("/fonts/BebasNeue-Regular.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +22,7 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 h1 h2 h3{
+    font-family: sans-serif;
 }
 
 header .navbar {
@@ -156,8 +160,9 @@ border-radius: 8px;
 }
 h1{
     margin: 10vh 2vw 3vh 3vw;
-    font-size: 1.8rem;
+    font-size: 22px;
     color: #fff;
+    padding: 0 0 0 15px;
 }
 
 .forge-section{
@@ -273,8 +278,9 @@ h1{
 
 .new-releases-games{
     color: var(--text-color);
-    margin: 10vh 2vw 3vh 3vw;
-    font-size: 1.5rem;
+    margin: 70px 0 5px 0;
+    padding: 0 0 0 15px;
+    font-size: 15px;
 }
 
 .new-games-2{
@@ -290,14 +296,20 @@ h1{
     border-radius: 8px;
     margin: 10px 0 0 0 ;
 }
+
 .checkbox{
     display: none;
 }
 #heart-checkbox:checked~.fr{
-    transition: all .5s ease-in-out;
+    transition: .5s ease-in-out;
     color:var(--btn-color);
 }
-
+.fr:hover{
+    color: var(--text-color);
+    cursor: pointer;
+    scale: 1.01;
+    transition: .5s ease-in-out;
+}
 
 .covers-name-price{
     display: flex;
@@ -358,6 +370,7 @@ h1{
 }
 
 .media-container{
+    background-color: #95959507;
     display: flex;
     width: 100%;
     gap: 15px;
@@ -371,6 +384,7 @@ h1{
 }
 
 .img-covers:hover{
+    cursor: pointer;
     scale: 1.05;
     transition: .4s ease-in-out;
 }
@@ -398,6 +412,7 @@ h1{
     padding: 20px 20px;
     color: #000000;
     font-weight: 400;   
+    font-size: 14px;
 }
 .second-media-container{
     display: flex;
@@ -433,6 +448,13 @@ h1{
 .deal{
     text-decoration: line-through;
     font-size: 10px;
+}
+.games-on-sale h3{
+    font-family: ;
+    color: var(--text-color);
+    padding: 0 0 0 15px;
+    margin: 70px 0 5px 0;
+
 }
 .second-price-covers{
     font-size: 14px;
@@ -517,6 +539,7 @@ h1{
     
 }
 .second-media-container{
+    background-color:#95959507 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -529,3 +552,36 @@ h1{
     width: 0;
     margin: 0;
 }
+
+.footer-section{
+    background-color: #95959507;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}
+.footer-section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 5px 0;
+    font-size: 13px;
+}
+footer{
+    margin: 30px 0 0 0;
+}
+small{
+    font-size: 12px;
+} 
+
+/* Contact us*/
+
+
+

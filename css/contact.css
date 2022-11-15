@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+:root{
+    --bg-color: #222327;
+    --text-color:#fff;
+    --btn-color:#29fd53;
+
+}
+
+body{
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+.go-back{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    font-size: 9px;
+    border: 0 solid transparent;
+    
+}
+.go-back:hover{
+    color: var(--bg-color);
+    cursor: pointer;
+    scale: 1.04;
+    transition: .4s ease-in-out;
+}
+
+.go-back:active{
+    color: var(--bg-color);
+    cursor: pointer;
+    scale: 1.04;
+    transition: .4s ease-in-out;
+}
+h1{
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+.address-info{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0 0px 0;
+    width: 100%;
+    padding: 20px 20px;
+
+}
+.form-container:{
+    width: 100%;
+}
+.form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+.label-class{
+    font-size: 13px;
+    font-weight: 500;
+}
+ .input-class{
+    margin: 2px 0 5px 0;
+    width: 100%;
+ }
+ textarea{
+    height: 13vh;
+ }
+ .checkbox{
+    display: none;
+ }
+ .submit-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 20px;
+    font-size: 13px;
+    margin-top: 5px;
+    background-color: #222327;
+    color: #fff;
+ }
+ .submit:hover{
+    cursor: pointer;
+    scale: 1.06;
+    transition: .3s ease-in-out;
+ }
+
+ .submit:active{
+    cursor: pointer;
+    scale: 1.06;
+    transition: .4s ease-in-out;
+ }
+ .submit-message{
+    display: none;
+    font-size: 12px;
+    margin: 5px 5px;
+ }
+ #submit:checked ~.submit-message{
+    display: block;
+    transition: cubic-bezier(1, 0, 0.78, 1)
+ }
+
+ @media and screen (min-width:390px); {
+    .form-container:{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+ }
