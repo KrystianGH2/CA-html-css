@@ -197,7 +197,10 @@ h1{
 }
 .forge-title{
     margin: 10px 15px;
-    color: #fff;
+    color: rgb(255, 132, 0);
+    font-family: revonza;
+    font-size: 1.1rem;
+    letter-spacing:var(--font-letterspacing-3);
 }
 
 
@@ -671,6 +674,9 @@ small{
         height: 45vh;
         flex-direction: row;
         
+    }
+    .forge-title{
+        font-size: 1.3rem;
     }
     .md-row{
         display: flex;

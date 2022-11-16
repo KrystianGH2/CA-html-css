@@ -1,4 +1,5 @@
 @import "https://unpkg.com/open-props";
+@import "open-props/colors-hsl";
 *{
     margin: 0;
     padding: 0;

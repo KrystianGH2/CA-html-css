@@ -1,0 +1,19 @@
+@import "https://unpkg.com/open-props";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: aqua;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+.go-back{
+    position: absolute;
+    top:3%;
+    left: 5%;
+    font-size: 9px;
+    border: 0 solid transparent;
+}
