@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GameHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -15,12 +21,14 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar navbar-mdq">
         <a href="#">
           <img class="logo" src="images/GameHub_Logo.png" alt="game hub-logo"
         /></a>
-        <ul id="nav-menu" class="nav-menu">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">Games</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
@@ -67,24 +75,29 @@
 
     <section class="forge-section">
       <div class="featured-section">
-        <img
-          class="img-forge"
-          src="images/GameHub_covers10.jpg"
-          alt="forge-legend"
-        />
-        <div class="buy">
-          <span class="price">NOK 449</span>
-          <button class="quantity">- 1 +</button>
-          <button class="add-to-cart">Add to cart</button>
+        <div class="mdq-featured">
+          <img
+            class="img-forge"
+            src="images/GameHub_covers10.jpg"
+            alt="forge-legend"
+          />
+
+          <div class="buy">
+            <span class="price">NOK 449</span>
+            <button class="quantity">- 1 +</button>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
         </div>
 
-        <p class="forge-title">Forge Legend</p>
-        <p class="forge-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          quisquam iste culpa dolorem, qui expedita! Possimus nulla eum fugiat
-          culpa perspiciatis at facere fugit neque unde veniam, odit harum
-          omnis?
-        </p>
+        <div class="md-row">
+          <p class="forge-title">Forge Legend</p>
+          <p class="forge-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+            quisquam iste culpa dolorem, qui expedita! Possimus nulla eum fugiat
+            culpa perspiciatis at facere fugit neque unde veniam, odit harum
+            omnis?
+          </p>
+        </div>
       </div>
     </section>
 

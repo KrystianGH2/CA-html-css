@@ -15,16 +15,17 @@
     <button class="go-back">
       <i class="fa-solid fa-arrow-left"> Go back</i>
     </button>
-    <div class="contact-information">
-      <h1>Contact us</h1>
-      <p class="address-info">
-        Capitol Records Building,1750 Vine St, Los Angeles
-      </p>
-      <p class="address-info">gamehub@mysite.com</p>
-      <p class="address-info">123-456-789</p>
-    </div>
 
-    <section>
+    <section class="contact-us">
+      <div class="contact-information">
+        <h1>Contact us</h1>
+        <p class="address-info">
+          Capitol Records Building,1750 Vine St, Los Angeles
+        </p>
+        <p class="address-info">gamehub@mysite.com</p>
+        <p class="address-info">123-456-789</p>
+      </div>
+
       <div class="form-container">
         <form class="form">
           <label class="label-class" for="name">Full name</label>
@@ -49,21 +50,41 @@
             placeholder="Enter password"
           />
 
-          <label class="label-class" for="meassage">Message</label>
+          <label class="label-class" for="message">Message</label>
           <textarea
-            class="input-class"
-            name=""
+            class="type"
+            name="meassage"
+            placeholder="Type your message here"
             id="message"
             cols="30"
             rows="10"
           ></textarea>
+          <div class="submit-item">
+            <input class="checkbox" type="checkbox" id="submit" />
+            <label class="submit" for="submit">Submit</label>
+            <p class="submit-message">Thank you for submitting!</p>
+          </div>
         </form>
       </div>
-      <div class="submit-item">
-        <input class="checkbox" type="checkbox" id="submit" />
-        <label class="submit" for="submit">Submit</label>
-        <p class="submit-message">Thank you for submitting!</p>
-      </div>
     </section>
+
+    <div class="maps">
+      <img
+        class="maps"
+        src="images/Screenshot 2022-09-21 081337.png"
+        alt="maps"
+      />
+    </div>
+
+    <footer>
+      <p>Connect with us</p>
+      <div class="contact-icons">
+        <span><i class="fa-brands fa-facebook"></i></span>
+        <span><i class="fa-brands fa-instagram"></i> </span
+        ><i class="fa-brands fa-twitter"></i>
+        <span><i class="fa-brands fa-youtube"></i></span>
+      </div>
+      <small>© 2022 by GameHub.</small>
+    </footer>
   </body>
 </html>

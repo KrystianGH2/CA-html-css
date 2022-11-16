@@ -1,5 +1,8 @@
 @import "https://unpkg.com/open-props";
-
+@font-face {
+    font-family: revonza;
+    src:url(revonza.tff);
+}
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +19,7 @@
     --price:13px;
 }
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 h1 h2 h3{
     font-family: sans-serif;
@@ -35,6 +38,7 @@ body{
 }
 
 .navbar {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -90,19 +94,28 @@ border-radius: 8px;
 .is-visible{
     display: grid;
     text-align: center;
+    transition: .5s ease-in-out;
+    scale: 1.02;
 }
 
 .nav-link{
     color:rgb(84, 110, 111);
     font-size: var(--font-size);
     font-weight: 500;
-    transition: 0.5s ease;
+    transition: 0.4s ease;
     
 }
 .nav-link:hover{
     color: var(--bg-color);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
+    text-decoration: underline;
+}
+.nav-link:active{
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: underline;
 }
 .hamburger{
     display: block;
@@ -147,6 +160,10 @@ border-radius: 8px;
     margin: 0px 10px;
     background-color: #aab2acce;
 
+}::placeholder{
+    color: #000000;
+    padding-left: 8px;
+    font-size: 12px;
 }
 
 .magnifying-glass{
@@ -156,7 +173,7 @@ border-radius: 8px;
     color: #2a2b2db1;
 }
 h1{
-    margin: 10vh 2vw 3vh 3vw;
+    margin: 10vh 0vw 3vh 1vw;
     font-size: 22px;
     color: #fff;
     padding: 0 0 0 15px;
@@ -253,9 +270,6 @@ h1{
     transition: .3s ease-in-out;
     cursor: pointer;
 }
-
-
-
 .forge-text{
     display: flex;
     max-width: 280px;
@@ -268,14 +282,13 @@ h1{
     justify-content: center;
     align-items: center;
 }
-
 .middle-container{
     background: #95959507;
 }
 
 .new-releases-games{
     color: var(--text-color);
-    margin: 70px 0 5px 0;
+    margin: 10vh 0vw 3vh 1vw;
     padding: 0 0 0 15px;
     font-size: 15px;
 }
@@ -393,7 +406,7 @@ h1{
     font-size: var(--font-size-3);
     color: var(--text-color);
     font-weight: 400;
-    margin: 50px 0 50px 0;
+    margin: 60px 0 60px 0;
 
 
 }
@@ -450,7 +463,7 @@ h1{
     font-family: ;
     color: var(--text-color);
     padding: 0 0 0 15px;
-    margin: 70px 0 5px 0;
+    margin: 10vh 0vw 3vh 1vw;
 
 }
 .second-price-covers{
@@ -576,9 +589,131 @@ footer{
 }
 small{
     font-size: 12px;
+
 } 
+@media screen and (min-width: 480px){
+    .search-bar{
+        transition: all .5s ease;
+        width: 400px;
+    }
+    .search-text{
+        width: 400px;
+    }
 
-/* Contact us*/
+}
+@media screen and (min-width: 768px) {
+    .search-bar{
+        transition: all .5s ease;
+        width: 500px;
+    }
+    .search-text{
+        width: 490px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        background: none; 
+              
+    }  
 
+    .nav-menu{
+        display: flex;
+        width: 490px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 50px;
+    
+    }
+    
+    .nav-link{
+        color: var(--text-color);
+        font-size: 15x;
+        font-weight:normal;
+    
+    }
+    .nav-link:hover{
+        color: var(--btn-color);
+        font-weight: 400;
+    }
+    .nav-link:active{
+        color: var(--btn-color);
+        font-weight: 400;
+    }
+    .icons{
+        padding-right: 30px;
+    }
+    .is-visible{
+        display: flex;
+        width: 100%;
+
+    }
+    .logo{
+        transition: all .5s ease;
+        width: 200px;
+        top: 20%;
+        left: 37%;
+        position: absolute;
+    }
+    .search-container {
+        margin-top: 34%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .logo{
+        transition: .5s ease;
+        left: 40%;
+    }
+    .featured-section{
+        width: 100%;
+        height: 45vh;
+        flex-direction: row;
+        
+    }
+    .md-row{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        
+    }
+    .mdq-featured{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        animation: 500ms ease-in;
+
+    }.media-container{
+        justify-content:space-evenly;
+        transition: .5s ease;
+    }
+    .text-offer{padding: 0 60px 0 60px;}
+    
+    }
+    @media screen and (min-width: 1440px){
+        .search-container{
+            margin-top: 23%;
+    }.logo{
+        top: 25%;
+        left: 43%;
+    }.featured-section{
+        gap: 100px;
+    }
+    .media-container{
+        padding: 0 80px 0 80px;
+    }
+    .text-offer{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 200px 0 200px;
+    }
+    .second-media-container{
+        padding: 0 80px 0 80px;
+    }
+}
 
 
