@@ -1,8 +1,5 @@
 @import "https://unpkg.com/open-props";
-@font-face {
-    font-family: "BebasNeue-Regular";
-    src: url("/fonts/BebasNeue-Regular.ttf");
-}
+
 *{
     margin: 0;
     padding: 0;
