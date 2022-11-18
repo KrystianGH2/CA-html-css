@@ -9,7 +9,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    
+
 }
 :root{
     --bg-color: #222327;
@@ -19,9 +19,8 @@
     --price:13px;
 }
 html{
-   scroll-behavior: smooth;      
+    scroll-behavior: smooth;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -40,7 +39,6 @@ body{
 .logo{
     width:150px;
 }
-
 .logo:hover{
     scale: 1.07;
     transition: .3s ease-in-out;
@@ -62,34 +60,28 @@ body{
 }
 .icons{
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding-top: 30px;
+    gap:17px ;
 }
-.heart{
-    display: none;
+.heart, .user-icon:hover{
+    cursor: pointer;
+    color: var(--btn-color); 
+    transition: .4s ease-in-out;
+}
+.cart:hover{
     color: var(--btn-color);
+    cursor: pointer;
+    transition: .4s ease-in-out;
 }
-.user-icon{
-    display: none;
+.heart,.cart,.user-icon{
     color: var(--text-color);
 }
+
 .sign-register{
-    color: var(--text-color);
-    
+    display: none;
 }
-.sign-register:hover{
-    color: var(--btn-color);
-    font-weight: 400;
-    text-decoration: underline;
-    scale: 1.05;
-    transition: .3s ease-in-out;
-}
-.sign-register:active{
-    color: var(--btn-color);
-    font-weight: 400;
-    scale: 1.05;
-    transition: .3s ease-in-out;
-}
+
 
 .nav-menu{
 display: none;
@@ -671,7 +663,7 @@ small{
     .logo{
         transition: all .5s ease;
         width: 200px;
-        top: 20%;
+        top: 26%;
         left: 37%;
         position: absolute;
     }
@@ -680,9 +672,12 @@ small{
     }
 }
 @media screen and (min-width: 1024px){
-    .logo{
-        transition: .5s ease;
-        left: 40%;
+    .logo {
+        top: 26%;
+        left: 39%;
+    }
+    .search-container {
+        margin-top: 25%;
     }
     .featured-section{
         width: 100%;
@@ -710,12 +705,7 @@ small{
         justify-content:space-evenly;
         transition: .5s ease;
     }
-    .text-offer{padding: 0 60px 0 60px;
-    
-    }
-    .search-container {
-        margin-top: 24%;
-    }
+    .text-offer{padding: 0 60px 0 60px;}
     
     }
     @media screen and (min-width: 1300px){
@@ -725,13 +715,14 @@ small{
             transition: .5s ease;
             left: 42%;
         }
+        .search-container {
+            margin-top: 20%;
+        }
 
     }
     @media screen and (min-width: 1440px){
         
-    .navbar{
-        padding: 9px 6%;
-    }
+    
     .featured-section{
         gap: 100px;
     }
@@ -754,11 +745,18 @@ small{
         transition: .5s ease;
         left: 44%;
     }
-}
-    @media screen and (min-width: 1920px){
-        .search-container {
-            margin-top: 20%;
-        }
+
+    .search-container {
+        margin-top: 20%;
     }
+}
+@media screen and (min-width: 1920px){
+    .search-container {
+        margin-top: 20%;
+    }
+  
+}
+
+
 
 

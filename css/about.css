@@ -1,0 +1,98 @@
+@import "https://unpkg.com/open-props";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gray-3);
+    
+}
+h1{
+    padding-top: 20px;
+}
+.go-back{
+    position: absolute;
+    background-color: transparent;
+    top:3%;
+    left: 5%;
+    font-size: 9px;
+    border: 0 solid transparent;
+}
+.go-back:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: .4s ease-in-out;
+}
+.go-back:active{
+    cursor: pointer;
+    scale: 1.05;
+    transition: .4s ease-in-out;
+}
+.p-one{
+    padding: 20px 20px 20px 20px;
+}
+.p-two{
+    padding: 0px 20px 20px 20px;
+}
+p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-2);
+    height: 100%;
+    border-radius: 8px;
+    transition: all .4s ease-in-out;
+}
+@media screen and  (min-width:390px) {
+    .about-us{
+        margin: 60px 20px 20px 20px;
+        transition: all .4s ease-in-out;
+    }
+}
+@media screen and  (min-width:768px){
+    .go-back{
+        font-size: 11px;
+    }
+    .about-us{
+        margin: 100px 80px 40px 80px;
+        transition: all .4s ease-in-out;
+    }
+}
+@media screen and  (min-width:1024px){
+    .about-us{
+        margin: 160px 150px 130px 150px;
+        transition: all .4s ease-in-out;
+    }
+    .p-one{
+        padding: 20px 40px 60px 40px;
+    }
+    .p-two{
+        padding: 0px 40px 60px 40px;
+    }
+}
+@media screen and  (min-width:1440px) {
+    .go-back{
+        top: 8%;
+        left: 9%;
+    }
+    .p-one{
+        padding: 30px 200px 20px 200px;
+    }
+    .p-two{
+        padding: 0px 200px 60px 200px;
+    }
+    .about-us{
+        margin: 160px 280px 130px 280px;
+        transition: all .4s ease-in-out;
+    }
+}

@@ -31,18 +31,18 @@ body{
     scale: 1.05;
     transition: .3s ease-in-out;
 }
-.sign-in{
+.register{
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 15vh 0 0 0;
 }
-
 section{
     display: flex;
     justify-content: center;
     margin-top: 10vh;
     background-color: var(--gray-1);
+    transition: .3s ease-in-out;
     height: 100%;
 
 }
@@ -56,6 +56,21 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.first-last{
+    display: flex;
+    flex-direction: column
+}
+.name-box{
+    width: 145px;
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 0 solid transparent;
+    gap: 10px;
 }
 .input-label{
     display: flex;
@@ -75,16 +90,14 @@ label{
     font-size: 13px;
     padding: 15px 0 5px 0;
 }
-.email{
-    padding-top:25px ;
-}
 .checkbox{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 13px;
-    padding: 5px 5px 5px 5px;
+    gap:5px;
+    font-size: 12px;
+    padding: 8px 0 5px 0;
     
 }
 .buttton{
@@ -95,9 +108,9 @@ label{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    text-decoration: none;
 }
 .sign-button{
+    
     width: 200px;
     height: 25px;
     border: 0 solid transparent;
@@ -105,8 +118,11 @@ label{
     background-color: lightgray;
 }
 .sign-button a{
-    width: 200px;
     text-decoration: none;
+}
+.sign-button a:hover{
+    scale: 1.03;
+    transition: .3s ease;
 }
 
 .sign-button:hover{
@@ -138,21 +154,26 @@ label{
 }
 @media screen and (min-width:768px) {
     section{
-        transition: .3s ease-in-out;
         display: flex;
         justify-content: center;
+        margin-top: 10vh;
         background-color: var(--gray-1);
-        margin: 70px;
+        margin: 80px;
         border-radius: 8px;
-        height: 100%;
+        transition: all .5s ease-in-out;
+        
     }
     
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     section{
-        transition: .3s ease-in-out;
-        
+        transition: all .5s ease-in-out;
     }
+    
+    .name-box{
+        width: 245px
+    }
+    
 
     form{
         width:500px ;
@@ -177,18 +198,18 @@ label{
 }
 @media screen and (min-width:1440px){
     section{
-        margin: 70px 160px 0 160px;
-        transition:.5s ease-in-out;
+        margin: 70px 200px 0 200px;
+        transition: all .5s ease-in-out;
     }
     .go-back{
-        font-size: 11px;
+        font-size: 10px;
     }
     
 }
 @media screen and (min-width:1920px){
     section{
         margin: 70px 200px 0 200px;
-        transition: .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
     .go-back{
         font-size: 11px;

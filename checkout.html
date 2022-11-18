@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button class="go-back">
+      <a href="home2.html"><i class="fa-solid fa-arrow-left"> Go back</i></a>
+    </button>
+
+    <p class="checkout-text">Checkout</p>
+
+    <section>
+      <div class="container-one">
+        <div class="order-group">
+          <div class="image-group">
+            <p>ORDER SUMMARY</p>
+            <img
+              class="forge-img"
+              src="images/GameHub_covers10.jpg"
+              alt="Forge"
+            />
+            <p>Forge Legend</p>
+            <p class="price-nok">PRICE NOK 499</p>
+          </div>
+
+          <div class="total">
+            <p>Total</p>
+            <p>NOK 499</p>
+          </div>
+        </div>
+        <div class="card">
+          <p>PAYMENT METHOD:</p>
+          <p>CARD</p>
+        </div>
+      </div>
+
+      <div class="checkout">
+        <div class="checkout-box">
+          <label>Card Deatils</label>
+          <input type="text" placeholder="Card Holder *" />
+          <input type="text" placeholder="Card Number *" />
+          <fieldset>
+            <input class="exp-cvv" type="text" placeholder="Expiration *" />
+            <input class="exp-cvv" type="text" placeholder="cvv *" />
+          </fieldset>
+
+          <p>OTHER PAYMENT METHODS</p>
+          <form>
+            <select name="Payment options">
+              <option value="Paypal">PayPal</option>
+              <option value="Klarna">Pay Later With Klarna</option>
+              <option value="Paysafe">Paysafe Card</option>
+            </select>
+          </form>
+          <button class="button"><a href=""></a>PLACE ORDER</button>
+        </div>
+      </div>
+      <div class="popup">
+        <div class="pop">
+          <img src="images/check.png" />
+          <h2 class="spacing">Your order is complete!</h2>
+          <p class="spacing">
+            You will be recieving a confermation email with order details.
+          </p>
+          <button>
+            <a class="continue-shopping" href="home2.html">
+              Continue Shopping</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

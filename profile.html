@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>My account</title>
+  </head>
+  <body>
+    <button class="go-back">
+      <a href="home2.html"><i class="fa-solid fa-arrow-left"> Go back</i></a>
+    </button>
+
+    <section>
+      <h1>My account</h1>
+
+      <div class="container-one">
+        <img
+          class="portrait"
+          src="images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg"
+          alt="Rachel"
+        />
+        <h2>Personal Detail</h2>
+
+        <label class="full-name">Full Name</label>
+        <fieldset class="fieldset-one">
+          <input class="input-small" type="name" id="name" value="Jon" />
+          <input class="input-small" type="name" id="name" value="Jones" />
+        </fieldset>
+        <label class="email">Email</label>
+        <input
+          class="input-big"
+          type="email"
+          id="email"
+          value="jones@mysite.com"
+        />
+      </div>
+      <h2>Address</h2>
+      <div class="container-two">
+        <label class="address-line">Address line</label>
+        <input class="input-big" type="text" value="Santa Cruz Ave, Whittier" />
+        <fieldset class="fieldset-two">
+          <input class="input-small" type="text" value="857, California" />
+          <input class="input-small" type="text" value="18342" />
+        </fieldset>
+      </div>
+      <div class="container-three">
+        <p><i class="fa-solid fa-circle-check"></i></p>
+        <p class="gamehub-member">GameHub Member</p>
+      </div>
+      <input class="submit" type="submit" value="Edit Profile" />
+    </section>
+  </body>
+</html>
