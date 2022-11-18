@@ -25,3 +25,7 @@ The site is easy to navigate.
 i came across some cons while making the site, it is was not easy to make some popup page with out javascript. I had some popup pages such as sign in/register and checkout page, i mimicked these pages by making a whole new html page, so every pages has an different css files. 
 
 Overall making this website was great.
+
+Links: 
+figma: https://www.figma.com/proto/p6N4Iiit4aiKENBfqb3tPS/Untitled?scaling=scale-down&page-id=17%3A121&node-id=17%3A122&starting-point-node-id=17%3A122
+netlify: https://gamehubkgc.netlify.app/
